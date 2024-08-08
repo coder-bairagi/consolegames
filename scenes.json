@@ -11,7 +11,7 @@
         "results": {
             "1": {
                 "action": "increment",
-                "message": "You took the sword. Added one item into inventory"
+                "message": "You took the sword. Added to the inventory"
             },
             "2": {
                 "action": "none",
@@ -76,7 +76,7 @@
         "results": {
             "1": {
                 "action": "increment",
-                "message": "You used the herb and regained health. Health increased by 15."
+                "message": "You picked up the healing herb. Added to the inventory"
             },
             "2": {
                 "action": "none",

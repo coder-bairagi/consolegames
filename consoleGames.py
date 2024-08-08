@@ -178,7 +178,6 @@ class TextBasedGame(Board):
         content = [
             f'Name: {self.playerName}',
             f'Health: {self.health}',
-            f'Defense: {self.defense}',
         ]
         self.drawTopbar(rowPosition=4, colPosition=self.sidebarWidth + 1)
         self.setTopbarContent(content=content, rowPosition=2)
@@ -311,8 +310,6 @@ class TextBasedGame(Board):
                             # Set topbar and sidebar with updated health and inventory
                             self.setTopbar()
                             self.setSidebar()
-                        case 'defense':
-                            pass
                         case _ :
                             message = f'Attribute mismatch or not found in scene.json file at results {inputNum} of scene {obj['scene']}'
                             code = f'result = obj["results"][inputNum]\nmatch result:\n{' '*4}case "inventory":\n{' '*(4*2)}code\n{' '*4}case "health":\n{' '*(4*2)}code\n{' '*4}case "defense":\n{' '*(4*2)}code'
